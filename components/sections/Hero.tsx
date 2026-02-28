@@ -54,7 +54,7 @@ export function Hero({ headline, subline, ctaText, phone, happyCustomersCount = 
           <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-7 py-3.5 sm:px-8 sm:py-4 bg-primary-500 text-white text-sm sm:text-base font-semibold rounded-full hover:bg-primary-600 transition shadow-soft w-full sm:w-auto"
+              className="inline-flex items-center justify-center px-7 py-3.5 sm:px-8 sm:py-4 bg-primary-500 text-gray-900 text-sm sm:text-base font-semibold rounded-full hover:bg-primary-600 transition shadow-soft w-full sm:w-auto"
             >
               {ctaText}
             </Link>
@@ -81,7 +81,7 @@ export function Hero({ headline, subline, ctaText, phone, happyCustomersCount = 
               <span className="text-gray-600 text-sm">({happyCustomersCount} happy customers)</span>
             </div>
             <div className="flex items-center gap-2 text-sm text-gray-600">
-              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary-100 text-primary-600 font-medium text-xs">✓</span>
+              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary-200 text-gray-900 font-medium text-xs">✓</span>
               Free estimate · No obligation
             </div>
           </div>

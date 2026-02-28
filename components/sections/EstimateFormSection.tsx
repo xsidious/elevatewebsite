@@ -138,7 +138,7 @@ export function EstimateFormSection() {
               <div className="mt-6">
                 <button
                   type="submit"
-                  className="w-full sm:w-auto px-8 py-4 bg-primary-500 text-white font-semibold rounded-full hover:bg-primary-600 transition"
+                  className="w-full sm:w-auto px-8 py-4 bg-primary-500 text-gray-900 font-semibold rounded-full hover:bg-primary-600 transition"
                 >
                   Get my estimate range
                 </button>
@@ -196,7 +196,7 @@ export function EstimateFormSection() {
                   <button
                     type="submit"
                     disabled={submitting}
-                    className="px-8 py-4 bg-primary-500 text-white font-semibold rounded-full hover:bg-primary-600 disabled:opacity-50 transition"
+                    className="px-8 py-4 bg-primary-500 text-gray-900 font-semibold rounded-full hover:bg-primary-600 disabled:opacity-50 transition"
                   >
                     {submitting ? "Submitting…" : "Book my free consultation"}
                   </button>
@@ -223,7 +223,7 @@ function SuccessCelebration() {
     left: `${Math.random() * 100}%`,
     delay: Math.random() * 0.5,
     duration: 2 + Math.random() * 1.5,
-    color: ["#fbe551", "#fce635", "#e4c73d", "#fef08a", "#caa82a"][i % 5],
+    color: ["#ffd700", "#fcd34d", "#e6c200", "#fde68a", "#b39600"][i % 5],
     size: 4 + Math.random() * 8,
   }));
 

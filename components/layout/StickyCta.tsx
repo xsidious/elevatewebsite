@@ -44,7 +44,7 @@ export function StickyCta({ phone, ctaText = "Get a free estimate" }: StickyCtaP
           <button
             type="button"
             onClick={openQuoteModal}
-            className="inline-flex items-center px-3 py-1.5 sm:px-4 sm:py-2 bg-primary-500 text-white text-xs sm:text-sm font-semibold rounded-full hover:bg-primary-600 transition"
+            className="inline-flex items-center px-3 py-1.5 sm:px-4 sm:py-2 bg-primary-500 text-gray-900 text-xs sm:text-sm font-semibold rounded-full hover:bg-primary-600 transition"
           >
             {ctaText}
           </button>

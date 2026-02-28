@@ -10,17 +10,17 @@ const config: Config = {
     extend: {
       colors: {
         primary: {
-          50: "#fefce8",
-          100: "#fef9c3",
-          200: "#fef08a",
+          50: "#fffbeb",
+          100: "#fef3c7",
+          200: "#fde68a",
           300: "#fde047",
-          400: "#fce635",
-          500: "#fbe551",
-          600: "#e4c73d",
-          700: "#caa82a",
-          800: "#a68b1e",
-          900: "#857012",
-          950: "#524607",
+          400: "#fcdb36",
+          500: "#ffd700",
+          600: "#e6c200",
+          700: "#b39600",
+          800: "#806b00",
+          900: "#4d4000",
+          950: "#1a1600",
         },
       },
       fontFamily: {
@@ -36,8 +36,8 @@ const config: Config = {
         "5xl": "2.5rem",
       },
       boxShadow: {
-        soft: "0 4px 24px -4px rgba(251, 229, 81, 0.2), 0 8px 16px -6px rgba(0, 0, 0, 0.04)",
-        "soft-lg": "0 12px 40px -8px rgba(251, 229, 81, 0.25), 0 4px 16px -4px rgba(0,0,0,0.06)",
+        soft: "0 4px 24px -4px rgba(255, 215, 0, 0.2), 0 8px 16px -6px rgba(0, 0, 0, 0.04)",
+        "soft-lg": "0 12px 40px -8px rgba(255, 215, 0, 0.25), 0 4px 16px -4px rgba(0,0,0,0.06)",
       },
     },
   },

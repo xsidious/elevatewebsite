@@ -88,7 +88,7 @@ export function AdminNav({ unreadSubmissions = 0 }: AdminNavProps) {
             href={item.href}
             className={`flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${
               isActive
-                ? "bg-primary-600 text-white"
+                ? "bg-primary-600 text-gray-900"
                 : "text-zinc-300 hover:bg-zinc-800 hover:text-white"
             }`}
           >

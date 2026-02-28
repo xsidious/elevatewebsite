@@ -40,7 +40,7 @@ export function AboutSnippet() {
             </ul>
             <Link
               href="/about"
-              className="mt-10 inline-flex items-center gap-2 px-6 py-3 bg-primary-500 text-white font-semibold rounded-full hover:bg-primary-600 transition"
+              className="mt-10 inline-flex items-center gap-2 px-6 py-3 bg-primary-500 text-gray-900 font-semibold rounded-full hover:bg-primary-600 transition"
             >
               Learn More
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

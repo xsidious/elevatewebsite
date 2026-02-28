@@ -16,11 +16,11 @@ export function CtaSection() {
       </div>
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-8">
         <div>
-          <p className="text-white/80 text-sm font-medium uppercase tracking-wider">Free estimate · No obligation</p>
-          <h2 className="mt-2 text-2xl sm:text-3xl lg:text-4xl font-bold text-white">
+          <p className="text-gray-900/80 text-sm font-medium uppercase tracking-wider">Free estimate · No obligation</p>
+          <h2 className="mt-2 text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900">
             Ready to Start Your Project?
           </h2>
-          <p className="mt-2 text-white/90">Get a free quote and consultation. We respond within 24 hours.</p>
+          <p className="mt-2 text-gray-900/90">Get a free quote and consultation. We respond within 24 hours.</p>
         </div>
         <div className="flex flex-wrap items-center gap-4">
           <Link
@@ -31,7 +31,7 @@ export function CtaSection() {
           </Link>
           <a
             href="tel:5612473693"
-            className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full bg-white/15 text-white font-semibold border border-white/30 hover:bg-white/25 transition"
+            className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full bg-black/10 text-gray-900 font-semibold border border-gray-900/20 hover:bg-black/15 transition"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V21a2 2 0 01-2 2h-1C9.716 23 3 16.284 3 8V5z" />

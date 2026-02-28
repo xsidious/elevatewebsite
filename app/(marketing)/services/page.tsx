@@ -67,7 +67,7 @@ export default async function ServicesIndexPage() {
           </p>
           <Link
             href="/contact"
-            className="mt-6 inline-flex items-center justify-center px-8 py-4 bg-primary-500 text-white font-semibold rounded-full hover:bg-primary-600 transition shadow-soft"
+            className="mt-6 inline-flex items-center justify-center px-8 py-4 bg-primary-500 text-gray-900 font-semibold rounded-full hover:bg-primary-600 transition shadow-soft"
           >
             Get a free quote
           </Link>

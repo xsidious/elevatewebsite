@@ -84,7 +84,7 @@ export function ServiceForm({ serviceId, initial }: Props) {
       <div className="flex gap-3 pt-2">
         <button
           type="submit"
-          className="rounded-xl bg-primary-600 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-primary-700 transition"
+          className="rounded-xl bg-primary-600 px-4 py-2.5 text-sm font-medium text-gray-900 shadow-sm hover:bg-primary-700 transition"
         >
           Save changes
         </button>

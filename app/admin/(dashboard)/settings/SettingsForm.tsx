@@ -57,7 +57,7 @@ export function SettingsForm({ initial }: Props) {
         <button
           type="submit"
           disabled={saving}
-          className="rounded-xl bg-primary-600 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-primary-700 disabled:opacity-60 transition"
+          className="rounded-xl bg-primary-600 px-4 py-2.5 text-sm font-medium text-gray-900 shadow-sm hover:bg-primary-700 disabled:opacity-60 transition"
         >
           {saving ? "Saving…" : "Save settings"}
         </button>

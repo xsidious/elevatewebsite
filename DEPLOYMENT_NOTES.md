@@ -11,3 +11,10 @@ If "Made with Cursor" (or similar) appears:
 - **On GitHub** — Edit the repo’s About section (description, website URL, topics) and remove any "Cursor" topic or description so the repo doesn’t advertise the editor.
 
 No Cursor references are in the app’s UI, footer, or meta tags.
+
+## Commit messages
+
+If your editor adds a “Made-with” or similar trailer to commit messages, it will appear on GitHub. To avoid that:
+
+- Commit from the terminal with a plain message: `git commit -m "Your message"` (single line, no body).
+- Or install a local `commit-msg` hook that strips unwanted trailers from `.git/hooks/commit-msg` before pushing.

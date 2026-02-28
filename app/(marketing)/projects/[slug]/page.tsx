@@ -91,7 +91,7 @@ export default async function ProjectPage({ params }: Props) {
         <div className="mt-12">
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center px-8 py-4 bg-primary-500 text-white font-semibold rounded-full hover:bg-primary-600 transition"
+            className="inline-flex items-center justify-center px-8 py-4 bg-primary-500 text-gray-900 font-semibold rounded-full hover:bg-primary-600 transition"
           >
             Get an estimate for your project
           </Link>

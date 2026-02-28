@@ -105,7 +105,7 @@ export function Header() {
             <button
               type="button"
               onClick={openQuoteModal}
-              className="inline-flex items-center px-5 py-2.5 bg-primary-500 text-white font-semibold rounded-full hover:bg-primary-600 transition shadow-soft"
+              className="inline-flex items-center px-5 py-2.5 bg-primary-500 text-gray-900 font-semibold rounded-full hover:bg-primary-600 transition shadow-soft"
             >
               Get a Quote
             </button>
@@ -160,7 +160,7 @@ export function Header() {
               )}
               <a
                 href="tel:5612473693"
-                className="mx-4 mt-4 flex items-center justify-center gap-2 py-3 rounded-full bg-primary-500 text-white font-semibold"
+                className="mx-4 mt-4 flex items-center justify-center gap-2 py-3 rounded-full bg-primary-500 text-gray-900 font-semibold"
               >
                 (561) 247-3693
               </a>

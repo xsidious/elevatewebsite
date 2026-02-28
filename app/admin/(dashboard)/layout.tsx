@@ -58,7 +58,7 @@ export default async function AdminDashboardLayout({
           <div className="flex items-center gap-4">
             <span className="text-sm text-zinc-500">{session.user?.email}</span>
             <span className="h-8 w-px bg-zinc-200" />
-            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary-100 text-primary-600 text-sm font-semibold">
+            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary-200 text-gray-900 text-sm font-semibold">
               {(session.user?.email ?? "A").charAt(0).toUpperCase()}
             </span>
           </div>
