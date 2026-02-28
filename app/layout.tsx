@@ -21,6 +21,10 @@ export const metadata: Metadata = {
     description:
       "Elevating your vision with quality renovations. Free estimate, no obligation.",
   },
+  // Prevent any "generator" or tool attribution in meta tags
+  other: {
+    generator: "Next.js",
+  },
 };
 
 export default function RootLayout({

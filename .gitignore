@@ -27,8 +27,9 @@ prisma/dev.db-journal
 # Uploads (optional: remove to track uploaded images)
 # public/uploads
 
-# IDE
+# IDE / editor
 .idea
 .vscode
+.cursor
 *.swp
 *.swo
