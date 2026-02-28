@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 :root {
-  --foreground: #1f2937;
+  --foreground: #0f0f0f;
   --background: #ffffff;
-  --muted: #6b7280;
-  --accent: #86223c;
+  --muted: #525252;
+  --accent: #f59e0b;
 }
 
 body {
@@ -25,8 +25,8 @@ html {
 }
 
 ::selection {
-  background: rgba(134, 34, 60, 0.2);
-  color: #1f2937;
+  background: rgba(245, 158, 11, 0.25);
+  color: #0f0f0f;
 }
 
 /* Flowing section curve */

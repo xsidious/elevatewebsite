@@ -223,7 +223,7 @@ function SuccessCelebration() {
     left: `${Math.random() * 100}%`,
     delay: Math.random() * 0.5,
     duration: 2 + Math.random() * 1.5,
-    color: ["#86223c", "#e11d48", "#f97316", "#fbbf24", "#22c55e"][i % 5],
+    color: ["#f59e0b", "#fbbf24", "#d97706", "#fcd34d", "#92400e"][i % 5],
     size: 4 + Math.random() * 8,
   }));
 
