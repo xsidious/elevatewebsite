@@ -37,11 +37,11 @@ export function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100">
+    <header className="sticky top-0 z-50 bg-gray-900 backdrop-blur-md border-b border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-14 sm:h-16 lg:h-20">
           <Link href="/" className="flex items-center shrink-0">
-            <img src="/elevatelogo.png" alt="ELEVATE" className="h-12 w-auto object-contain" width={240} height={48} />
+            <img src="/elevatelogo.png" alt="ELEVATE" className="h-12 w-auto object-contain invert" width={240} height={48} />
           </Link>
 
           <nav className="hidden lg:flex items-center gap-8">
@@ -54,7 +54,7 @@ export function Header() {
                   onMouseLeave={() => setServicesOpen(false)}
                 >
                   <button
-                    className="text-gray-600 hover:text-primary-500 font-medium py-2 transition-colors"
+                    className="text-gray-300 hover:text-primary-400 font-medium py-2 transition-colors"
                     aria-expanded={servicesOpen}
                     aria-haspopup="true"
                   >
@@ -67,7 +67,7 @@ export function Header() {
                           <Link
                             key={child.href}
                             href={child.href}
-                            className="block px-5 py-2.5 text-gray-600 hover:text-primary-500 hover:bg-primary-50/80 transition rounded-lg mx-2"
+                            className="block px-5 py-2.5 text-gray-300 hover:text-primary-400 hover:bg-gray-800 transition rounded-lg mx-2"
                           >
                             {child.label}
                           </Link>
@@ -81,7 +81,7 @@ export function Header() {
                   key={item.href}
                   href={item.href!}
                   className={`font-medium py-2 transition-colors ${
-                    pathname === item.href ? "text-primary-500" : "text-gray-600 hover:text-primary-500"
+                    pathname === item.href ? "text-primary-400" : "text-gray-300 hover:text-primary-400"
                   }`}
                 >
                   {item.label}
@@ -93,9 +93,9 @@ export function Header() {
           <div className="hidden lg:flex items-center gap-4">
             <a
               href="tel:5612473693"
-              className="flex items-center gap-2 text-gray-600 hover:text-primary-500 transition text-sm font-medium"
+              className="flex items-center gap-2 text-gray-300 hover:text-primary-400 transition text-sm font-medium"
             >
-              <span className="flex h-9 w-9 items-center justify-center rounded-full bg-primary-50 text-primary-500">
+              <span className="flex h-9 w-9 items-center justify-center rounded-full bg-gray-800 text-primary-400">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V21a2 2 0 01-2 2h-1C9.716 23 3 16.284 3 8V5z" />
                 </svg>
@@ -113,7 +113,7 @@ export function Header() {
 
           <button
             type="button"
-            className="lg:hidden p-2 text-gray-700 hover:text-primary-500"
+            className="lg:hidden p-2 text-gray-300 hover:text-primary-400"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
           >
@@ -128,12 +128,12 @@ export function Header() {
         </div>
 
         {mobileOpen && (
-          <div className="lg:hidden pt-3 pb-4 border-t border-gray-100 bg-white/95 backdrop-blur-sm">
+          <div className="lg:hidden pt-3 pb-4 border-t border-gray-800 bg-gray-900 backdrop-blur-sm">
             <div className="flex flex-col gap-0.5">
               {navLinks.map((item) =>
                 item.children ? (
                   <div key={item.label} className="py-2">
-                    <span className="block px-4 py-1 text-xs font-semibold text-gray-400 uppercase tracking-wider">
+                    <span className="block px-4 py-1 text-xs font-semibold text-gray-500 uppercase tracking-wider">
                       {item.label}
                     </span>
                     {item.children.map((child) => (
@@ -141,7 +141,7 @@ export function Header() {
                         key={child.href}
                         href={child.href}
                         onClick={() => setMobileOpen(false)}
-                        className="block px-4 py-2.5 text-gray-600 hover:text-primary-500"
+                        className="block px-4 py-2.5 text-gray-300 hover:text-primary-400"
                       >
                         {child.label}
                       </Link>
@@ -152,7 +152,7 @@ export function Header() {
                     key={item.href}
                     href={item.href!}
                     onClick={() => setMobileOpen(false)}
-                    className={`px-4 py-2.5 rounded-xl ${pathname === item.href ? "bg-primary-50 text-primary-500 font-medium" : "text-gray-600 hover:bg-gray-50"}`}
+                    className={`px-4 py-2.5 rounded-xl ${pathname === item.href ? "bg-gray-800 text-primary-400 font-medium" : "text-gray-300 hover:bg-gray-800"}`}
                   >
                     {item.label}
                   </Link>
@@ -167,7 +167,7 @@ export function Header() {
               <button
                 type="button"
                 onClick={openQuoteModal}
-                className="mx-4 mt-2 py-3 w-[calc(100%-2rem)] text-center rounded-full border-2 border-primary-500 text-primary-500 font-semibold"
+                className="mx-4 mt-2 py-3 w-[calc(100%-2rem)] text-center rounded-full border-2 border-primary-500 text-primary-400 font-semibold"
               >
                 Get a Quote
               </button>

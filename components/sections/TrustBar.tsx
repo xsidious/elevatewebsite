@@ -10,7 +10,7 @@ const items = [
 ];
 
 function Icon({ name }: { name: string }) {
-  const cls = "w-5 h-5 text-primary-500";
+  const cls = "w-5 h-5 text-primary-400";
   switch (name) {
     case "years":
       return (
@@ -44,18 +44,18 @@ function Icon({ name }: { name: string }) {
 
 export function TrustBar({ yearsExperience }: TrustBarProps) {
   return (
-    <section className="bg-white py-4 -mt-12 relative z-10">
+    <section className="bg-gray-900 py-4 -mt-12 relative z-10">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 rounded-2xl bg-gray-50/80 py-4 px-6 border border-gray-100">
+        <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 rounded-2xl bg-gray-800/80 py-4 px-6 border border-gray-700">
           {items.map((item, i) => (
             <div key={item.icon} className="flex items-center gap-2">
-              <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-primary-50/80 text-primary-500">
+              <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-gray-700 text-primary-400">
                 <Icon name={item.icon} />
               </span>
-              <span className="text-gray-600 text-sm">
+              <span className="text-gray-300 text-sm">
                 {item.icon === "years" ? `${yearsExperience}+ ` : ""}{item.label}
               </span>
-              {i < items.length - 1 && <span className="hidden lg:inline w-px h-4 bg-gray-200" />}
+              {i < items.length - 1 && <span className="hidden lg:inline w-px h-4 bg-gray-600" />}
             </div>
           ))}
         </div>
