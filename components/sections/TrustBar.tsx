@@ -5,7 +5,7 @@ type TrustBarProps = {
 const items = [
   { icon: "years", label: "Years Experience" },
   { icon: "estimate", label: "Free Estimates" },
-  { icon: "area", label: "Serving South Florida" },
+  { icon: "area", label: "North Shore & Chicagoland" },
   { icon: "insured", label: "Licensed & Insured" },
 ];
 

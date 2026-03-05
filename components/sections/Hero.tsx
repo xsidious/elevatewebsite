@@ -10,9 +10,9 @@ type HeroProps = {
 };
 
 const features = [
-  { title: "Home Renovation", desc: "Full-scale remodels" },
-  { title: "Kitchen & Bath", desc: "Custom design & build" },
-  { title: "Restoration", desc: "Repairs & upgrades" },
+  { title: "Painting", desc: "Interior & exterior" },
+  { title: "Kitchen & Bath", desc: "Remodeling & renovation" },
+  { title: "Decks & More", desc: "General contracting" },
 ];
 
 function StarRating({ rating = 5 }: { rating?: number }) {
@@ -43,7 +43,7 @@ export function Hero({ headline, subline, ctaText, phone, happyCustomersCount = 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-28 w-full">
         <div className="max-w-2xl">
           <p className="text-primary-500 font-semibold text-xs sm:text-sm uppercase tracking-[0.2em] mb-3 sm:mb-5">
-            Elevating Your Space & Your Vision
+            Serving the North Shore, Chicago Northern Suburbs & Chicagoland
           </p>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight sm:leading-[1.08] tracking-tight">
             {headline}

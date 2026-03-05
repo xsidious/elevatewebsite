@@ -3,29 +3,30 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "About Us | ELEVATE | South Florida Remodeling",
-  description: "ELEVATE — Florida's choice for remodeling. Quality craftsmanship, clear communication. Kitchen, bathroom, and full home renovation across South Florida.",
+  title: "About Us | ELEVATE | Painting & Remodeling",
+  description: "Elevate Painting & Remodeling—residential and commercial. Built on experience, focused on results. Structured planning, reliable timelines, quality execution, transparent value. North Shore & Chicagoland.",
 };
 
 const areas = [
-  "Boca Raton", "Boynton Beach", "Delray Beach", "Highland Beach", "Juno Beach", "Jupiter",
-  "Lake Park", "Lake Worth", "Lantana", "Loxahatchee Groves", "North Palm Beach", "Palm Beach Gardens",
-  "Palm Beach", "Riviera Beach", "Tequesta", "Wellington", "West Palm Beach",
+  "North Shore", "Chicago Northern Suburbs", "Chicagoland", "Deerfield", "Northbrook", "Highland Park",
+  "Glenview", "Wilmette", "Winnetka", "Lake Forest", "Evanston", "Skokie",
 ];
 
 const guarantees = [
-  "100% Satisfaction Guarantee",
-  "Quality Whole Home Repairs",
-  "Complete Home Revivification",
-  "Historic Home Restorations",
-  "Custom Kitchen & Bathroom Renovations",
+  "Interior & Exterior Painting",
+  "Kitchen Remodeling",
+  "Bathroom Renovation",
+  "Basement Remodeling",
+  "Custom Deck Building",
+  "General Contracting",
+  "Interior Design & Home Upgrades",
 ];
 
 const whyChoose = [
-  { title: "Competitive rates", desc: "Fair pricing with no hidden fees" },
-  { title: "Always on time", desc: "We respect your schedule" },
-  { title: "Trustworthy team", desc: "Licensed, insured, and vetted" },
-  { title: "Quality craftsmanship", desc: "45+ years in the field" },
+  { title: "Structured Planning", desc: "Every project begins with careful planning and clear scope definition. We take a methodical approach to ensure work is organized, efficient, and aligned with project goals from day one." },
+  { title: "Reliable Timelines", desc: "We prioritize realistic scheduling and coordination to keep projects moving forward and completed on time—without unnecessary delays or disruption." },
+  { title: "Quality Execution", desc: "Our experienced team delivers consistent, high-quality workmanship, maintaining attention to detail and professional standards throughout every phase of the project." },
+  { title: "Transparent Value", desc: "We provide clear pricing and dependable service, offering strong value through quality materials, skilled execution, and long-term results—without hidden costs." },
 ];
 
 export default function AboutPage() {
@@ -46,14 +47,33 @@ export default function AboutPage() {
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-primary-500 font-semibold text-sm uppercase tracking-[0.2em]">About Us</p>
           <h1 className="mt-2 text-3xl font-bold text-gray-900 sm:text-4xl lg:text-5xl">
-            Florida&apos;s Best Remodeling Services
+            About Elevate Painting & Remodeling
           </h1>
           <p className="mt-6 text-lg text-gray-600 max-w-2xl leading-relaxed">
-            ELEVATE is a South Florida team that takes on big projects. We specialize in home renovations, full interior remodels, kitchens and bathrooms, and restoration and repairs. Our skilled team is dedicated to making your experience top-notch.
+            We're creators of space and mood—remodeling homes with heart, style, and purpose. At Elevate, your dream design isn't just possible—it's the plan.
           </p>
           <p className="mt-4 text-gray-600 max-w-2xl leading-relaxed">
-            With over 45 years in the renovation field, we&apos;re here to make your renovation dreams a reality. Looking for a team that gets it done? Call us today for a free estimate.
+            Elevate Painting & Remodeling is a professional remodeling and painting company serving residential and commercial clients across the North Shore, Chicago's northern suburbs, and the greater Chicagoland area. We deliver reliable craftsmanship, clear communication, and a structured approach to every project.
           </p>
+        </div>
+      </section>
+
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+        <p className="text-primary-500 font-semibold text-sm uppercase tracking-[0.2em]">Sector we work in</p>
+        <h2 className="mt-2 text-2xl font-bold text-gray-900 sm:text-3xl">Residential & Commercial</h2>
+        <div className="mt-10 grid md:grid-cols-2 gap-8">
+          <div className="p-6 rounded-3xl border border-gray-100 bg-gray-50/50 shadow-soft">
+            <h3 className="text-lg font-semibold text-gray-900">Residential</h3>
+            <p className="mt-3 text-gray-600 leading-relaxed">
+              Professional remodeling and painting services tailored to private homes, focused on clean execution, careful planning, and long-term quality.
+            </p>
+          </div>
+          <div className="p-6 rounded-3xl border border-gray-100 bg-gray-50/50 shadow-soft">
+            <h3 className="text-lg font-semibold text-gray-900">Commercial</h3>
+            <p className="mt-3 text-gray-600 leading-relaxed">
+              Structured remodeling and painting solutions for offices, retail spaces, and multi-unit properties, delivered with clear scopes and coordinated execution.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -89,7 +109,7 @@ export default function AboutPage() {
       <section className="bg-gray-50 py-20 lg:py-28">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-primary-500 font-semibold text-sm uppercase tracking-[0.2em]">Service area</p>
-          <h2 className="mt-2 text-2xl font-bold text-gray-900 sm:text-3xl">Areas we service</h2>
+          <h2 className="mt-2 text-2xl font-bold text-gray-900 sm:text-3xl">North Shore, Chicago Northern Suburbs & Chicagoland</h2>
           <div className="mt-8 flex flex-wrap gap-3">
             {areas.map((area) => (
               <span
@@ -105,10 +125,7 @@ export default function AboutPage() {
 
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
         <p className="text-primary-500 font-semibold text-sm uppercase tracking-[0.2em]">Why choose us</p>
-        <h2 className="mt-2 text-2xl font-bold text-gray-900 sm:text-3xl">Why choose us?</h2>
-        <p className="mt-4 text-gray-600 max-w-3xl leading-relaxed">
-          Our customer service sets us apart. We know that a major renovation depends on a strong relationship with you—we take that responsibility seriously. We&apos;re careful with your property, your budget, and your timeline, and we take pride in the details. We&apos;re not the contractor you hope to never see again; we&apos;re the one you&apos;ll want back when the next project comes up.
-        </p>
+        <h2 className="mt-2 text-2xl font-bold text-gray-900 sm:text-3xl">Built on Experience. Focused on Results.</h2>
         <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {whyChoose.map((item) => (
             <div
@@ -126,7 +143,7 @@ export default function AboutPage() {
             href="/contact"
             className="inline-flex items-center justify-center px-8 py-4 bg-primary-500 text-gray-900 font-semibold rounded-full hover:bg-primary-600 transition shadow-soft"
           >
-            Get a free quote
+            Contact us
           </Link>
         </div>
       </section>

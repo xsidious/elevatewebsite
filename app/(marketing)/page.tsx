@@ -28,10 +28,10 @@ export default async function HomePage() {
     getSiteSetting("years_experience"),
   ]);
 
-  const headlineVal = headline || "Elevate Your Space. Realize Your Vision.";
-  const sublineVal = subline || "Custom renovations that fit how you live. Free estimate, no obligation.";
-  const ctaVal = ctaText || "Get a Free Estimate";
-  const phoneVal = phone || "(561) 247-3693";
+  const headlineVal = headline || "Professional Residential & Commercial Remodeling";
+  const sublineVal = subline || "Painting, kitchens, bathrooms, basements, decks, and more. Structured planning, reliable timelines, quality execution. Contact us for a consultation.";
+  const ctaVal = ctaText || "Contact Us";
+  const phoneVal = phone || "+1 312-483-6046";
   const yearsVal = yearsExperience || "45";
 
   return (

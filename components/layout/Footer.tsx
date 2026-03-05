@@ -11,11 +11,14 @@ const quickLinks = [
 ];
 
 const serviceLinks = [
-  { href: "/services/home-renovation", label: "Home Renovation" },
-  { href: "/services/kitchen-redesign-remodel", label: "Kitchen Remodel" },
-  { href: "/services/bathroom-redesign-remodel", label: "Bathroom Remodel" },
-  { href: "/services/restoration-and-repairs", label: "Restoration & Repairs" },
-  { href: "/services/flooring-and-tile", label: "Flooring & Tile" },
+  { href: "/services/interior-painting", label: "Interior Painting" },
+  { href: "/services/exterior-painting", label: "Exterior Painting" },
+  { href: "/services/kitchen-remodeling", label: "Kitchen Remodeling" },
+  { href: "/services/bathroom-renovation", label: "Bathroom Renovation" },
+  { href: "/services/basement-remodeling", label: "Basement Remodeling" },
+  { href: "/services/custom-deck-building", label: "Custom Deck Building" },
+  { href: "/services/general-contracting", label: "General Contracting" },
+  { href: "/services/interior-design-home-upgrades", label: "Interior Design" },
 ];
 
 export function Footer() {
@@ -28,7 +31,7 @@ export function Footer() {
               <img src="/elevatelogo.png" alt="ELEVATE" className="h-12 w-auto object-contain invert" width={240} height={48} />
             </Link>
             <p className="mt-4 text-sm text-gray-400 leading-relaxed max-w-xs">
-              Elevating your vision with quality work and clear communication. We deliver results that last.
+              We're creators of space and mood—remodeling homes with heart, style, and purpose. At Elevate, your dream design isn't just possible—it's the plan.
             </p>
           </div>
           <div>
@@ -58,15 +61,15 @@ export function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-4">Contact</h3>
             <ul className="space-y-3 text-sm text-gray-400">
-              <li><a href="mailto:hello@elevate.com" className="hover:text-primary-400 transition">hello@elevate.com</a></li>
-              <li><a href="tel:5612473693" className="hover:text-primary-400 transition">(561) 247-3693</a></li>
-              <li>6778 Lantana Rd, Suite 8, Greenacres, FL 33467</li>
+              <li><a href="mailto:Mike@getelevated.us" className="hover:text-primary-400 transition">Mike@getelevated.us</a></li>
+              <li><a href="tel:+13124836046" className="hover:text-primary-400 transition">+1 312-483-6046</a></li>
+              <li>Deerfield, IL</li>
             </ul>
             <Link
               href="/contact"
               className="mt-6 inline-flex items-center px-5 py-2.5 bg-primary-500 text-gray-900 font-semibold rounded-full hover:bg-primary-400 transition text-sm"
             >
-              Get a Free Quote
+              Contact us
             </Link>
           </div>
         </div>

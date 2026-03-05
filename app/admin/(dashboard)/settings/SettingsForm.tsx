@@ -12,9 +12,9 @@ const FIELDS: { key: string; label: string; placeholder?: string; type?: "text" 
   { key: "hero_headline", label: "Hero headline", placeholder: "Bringing Your Vision to Life" },
   { key: "hero_subline", label: "Hero subline", placeholder: "Custom renovations that fit how you live..." },
   { key: "cta_text", label: "CTA button text", placeholder: "Get An Estimate" },
-  { key: "phone", label: "Phone", placeholder: "(561) 247-3693" },
-  { key: "email", label: "Email", placeholder: "hello@elevate.com" },
-  { key: "address", label: "Address", placeholder: "6778 Lantana Rd, Suite 8..." },
+  { key: "phone", label: "Phone", placeholder: "+1 312-483-6046" },
+  { key: "email", label: "Email", placeholder: "Mike@getelevated.us" },
+  { key: "address", label: "Address", placeholder: "Deerfield, IL" },
   { key: "years_experience", label: "Years experience", type: "number", placeholder: "45" },
 ];
 

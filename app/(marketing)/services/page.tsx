@@ -6,20 +6,22 @@ import { getServices } from "@/lib/data";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Our Services | ELEVATE | Home Renovation & Remodel",
-  description: "Best home remodeling services in South Florida. Home renovation, complete interior remodel, kitchen and bathroom redesign, restoration and repairs. Free consultation.",
+  title: "Our Services | ELEVATE | Painting & Remodeling",
+  description: "Interior & exterior painting, kitchen remodeling, bathroom renovation, basement remodeling, custom decks, general contracting, interior design. Residential and commercial. Contact us for a consultation.",
 };
 
 export default async function ServicesIndexPage() {
   const services = await getServices();
 
   const serviceImages: Record<string, string> = {
-    "home-renovation": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80",
-    "complete-interior-remodel": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80",
-    "kitchen-redesign-remodel": "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=600&q=80",
-    "bathroom-redesign-remodel": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=600&q=80",
-    "restoration-and-repairs": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=600&q=80",
-    "flooring-and-tile": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80",
+    "interior-painting": "https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=600&q=80",
+    "exterior-painting": "https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=600&q=80",
+    "kitchen-remodeling": "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=600&q=80",
+    "bathroom-renovation": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=600&q=80",
+    "basement-remodeling": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=80",
+    "custom-deck-building": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80",
+    "general-contracting": "https://images.unsplash.com/photo-1504309092620-4d0ec726efa4?auto=format&fit=crop&w=600&q=80",
+    "interior-design-home-upgrades": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80",
   };
 
   return (
@@ -28,7 +30,7 @@ export default async function ServicesIndexPage() {
         <p className="text-primary-500 font-semibold text-sm uppercase tracking-[0.2em]">What we offer you</p>
         <h1 className="mt-2 text-3xl font-bold text-gray-900 sm:text-4xl lg:text-5xl">Our Services</h1>
         <p className="mt-4 text-lg text-gray-600 max-w-2xl">
-          From full home renovations to kitchen and bathroom remodels, restoration, and repairs—we handle it all. Click a service to learn more, or get in touch for a free consultation.
+          Interior and exterior painting, kitchen and bathroom remodeling, basement finishing, custom decks, general contracting, and interior design. We serve residential and commercial clients with a structured process and clear communication. Click a service to learn more.
         </p>
         <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((s) => (
@@ -39,7 +41,7 @@ export default async function ServicesIndexPage() {
             >
               <div className="aspect-[4/3] relative overflow-hidden">
                 <Image
-                  src={serviceImages[s.slug] ?? "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80"}
+                  src={serviceImages[s.slug] ?? "https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=600&q=80"}
                   alt={s.name}
                   fill
                   className="object-cover group-hover:scale-105 transition duration-500"
@@ -61,15 +63,15 @@ export default async function ServicesIndexPage() {
           ))}
         </div>
         <div className="mt-20 text-center">
-          <h2 className="text-xl font-bold text-gray-900 sm:text-2xl">Schedule your free consultation today</h2>
+          <h2 className="text-xl font-bold text-gray-900 sm:text-2xl">Looking for something else?</h2>
           <p className="mt-2 text-gray-600 max-w-xl mx-auto">
-            Tell us about your project and we&apos;ll get back within 24 hours with a free, no-obligation estimate.
+            Have a specific project in mind? Contact our team to discuss your needs and explore available options.
           </p>
           <Link
             href="/contact"
             className="mt-6 inline-flex items-center justify-center px-8 py-4 bg-primary-500 text-gray-900 font-semibold rounded-full hover:bg-primary-600 transition shadow-soft"
           >
-            Get a free quote
+            Contact us
           </Link>
         </div>
       </section>

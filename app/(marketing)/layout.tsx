@@ -18,7 +18,7 @@ export default function MarketingLayout({
       <Header />
       <main className="flex-1">{children}</main>
       <Footer />
-      <StickyCta phone="(561) 247-3693" ctaText="Get a free estimate" />
+      <StickyCta phone="+1 312-483-6046" ctaText="Contact us" />
       <Suspense fallback={null}>
         <GlobalModals />
       </Suspense>

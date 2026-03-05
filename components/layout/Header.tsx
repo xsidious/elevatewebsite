@@ -10,12 +10,14 @@ const navLinks = [
   {
     label: "Services",
     children: [
-      { href: "/services/home-renovation", label: "Home Renovation" },
-      { href: "/services/complete-interior-remodel", label: "Complete Interior Remodel" },
-      { href: "/services/kitchen-redesign-remodel", label: "Kitchen Redesign & Remodel" },
-      { href: "/services/bathroom-redesign-remodel", label: "Bathroom Redesign & Remodel" },
-      { href: "/services/restoration-and-repairs", label: "Restoration and Repairs" },
-      { href: "/services/flooring-and-tile", label: "Flooring & Tile" },
+      { href: "/services/interior-painting", label: "Interior Painting" },
+      { href: "/services/exterior-painting", label: "Exterior Painting" },
+      { href: "/services/kitchen-remodeling", label: "Kitchen Remodeling" },
+      { href: "/services/bathroom-renovation", label: "Bathroom Renovation" },
+      { href: "/services/basement-remodeling", label: "Basement Remodeling" },
+      { href: "/services/custom-deck-building", label: "Custom Deck Building" },
+      { href: "/services/general-contracting", label: "General Contracting" },
+      { href: "/services/interior-design-home-upgrades", label: "Interior Design & Home Upgrades" },
     ],
   },
   { href: "/projects", label: "Projects" },
@@ -92,7 +94,7 @@ export function Header() {
 
           <div className="hidden lg:flex items-center gap-4">
             <a
-              href="tel:5612473693"
+              href="tel:+13124836046"
               className="flex items-center gap-2 text-gray-300 hover:text-primary-400 transition text-sm font-medium"
             >
               <span className="flex h-9 w-9 items-center justify-center rounded-full bg-gray-800 text-primary-400">
@@ -100,7 +102,7 @@ export function Header() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V21a2 2 0 01-2 2h-1C9.716 23 3 16.284 3 8V5z" />
                 </svg>
               </span>
-              (561) 247-3693
+              +1 312-483-6046
             </a>
             <button
               type="button"
@@ -159,10 +161,10 @@ export function Header() {
                 )
               )}
               <a
-                href="tel:5612473693"
+                href="tel:+13124836046"
                 className="mx-4 mt-4 flex items-center justify-center gap-2 py-3 rounded-full bg-primary-500 text-gray-900 font-semibold"
               >
-                (561) 247-3693
+                +1 312-483-6046
               </a>
               <button
                 type="button"

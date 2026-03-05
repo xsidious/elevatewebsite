@@ -31,7 +31,7 @@ export function ProcessSection() {
         <div className="mt-14">
           <Link
             href="/contact"
-            className="inline-flex items-center px-6 py-3 bg-primary-500 text-white font-semibold rounded-full hover:bg-primary-600 transition"
+            className="inline-flex items-center px-6 py-3 bg-primary-500 text-gray-900 font-semibold rounded-full hover:bg-primary-600 transition"
           >
             Request a Consultation
           </Link>

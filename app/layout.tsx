@@ -13,13 +13,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ELEVATE | Home Remodel & Renovation | South Florida",
+  title: "ELEVATE | Painting & Remodeling | North Shore & Chicagoland",
   description:
-    "ELEVATE your space. Custom renovations, kitchens, bathrooms, and full interior remodels. Quality work, clear communication. Free estimates. Licensed & insured.",
+    "Professional painting and remodeling for residential and commercial. Interior & exterior painting, kitchens, bathrooms, basements, decks, general contracting. Deerfield, IL. +1 312-483-6046.",
   openGraph: {
-    title: "ELEVATE | Home Remodel & Renovation | South Florida",
+    title: "ELEVATE | Painting & Remodeling",
     description:
-      "Elevating your vision with quality renovations. Free estimate, no obligation.",
+      "Built on experience, focused on results. Painting, remodeling, and general contracting. North Shore & Chicagoland.",
   },
   // Prevent any "generator" or tool attribution in meta tags
   other: {

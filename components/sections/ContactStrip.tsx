@@ -6,7 +6,7 @@ type ContactStripProps = {
 };
 
 export function ContactStrip({
-  headline = "Free estimate",
+  headline = "Contact us",
   subline = "Tell us about your project",
 }: ContactStripProps) {
   return (
@@ -15,13 +15,13 @@ export function ContactStrip({
         <p className="text-primary-400 font-semibold text-sm uppercase tracking-[0.2em]">{headline}</p>
         <h2 className="mt-2 text-2xl font-bold text-white sm:text-3xl lg:text-4xl">{subline}</h2>
         <p className="mt-4 text-gray-400 max-w-xl mx-auto">
-          Share your vision and we&apos;ll reply within 24 hours with a free, no-obligation estimate.
+          Have a specific project in mind? Contact our team to discuss your needs and explore available options.
         </p>
         <Link
           href="/contact"
           className="mt-8 inline-flex items-center justify-center px-8 py-4 bg-primary-500 text-gray-900 font-semibold rounded-full hover:bg-primary-400 transition shadow-soft"
         >
-          Get a Free Estimate
+          Contact us
         </Link>
       </div>
     </section>

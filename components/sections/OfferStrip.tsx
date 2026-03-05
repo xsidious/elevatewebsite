@@ -10,7 +10,7 @@ export function OfferStrip() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
           </span>
-          <span className="font-medium text-gray-100">Free consultation & quote</span>
+          <span className="font-medium text-gray-100">Commercial & residential</span>
         </div>
         <div className="hidden sm:block w-px h-6 bg-gray-600" />
         <div className="flex items-center gap-3">
@@ -26,7 +26,7 @@ export function OfferStrip() {
           href="/contact"
           className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-primary-500 text-gray-900 font-semibold hover:bg-primary-400 transition"
         >
-          Request your free estimate
+          Contact us
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
           </svg>

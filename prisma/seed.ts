@@ -25,64 +25,84 @@ const prisma = new PrismaClient();
 
 const services = [
   {
-    slug: "home-renovation",
-    name: "Home Renovation",
-    tagline: "Custom Home Renovation Services",
+    slug: "interior-painting",
+    name: "Interior Painting",
+    tagline: "Precision and style",
     shortDescription:
-      "We have a multifaceted team available for all your renovation needs from the ground up.",
+      "High-quality interior painting for homes and businesses—expert surface prep, color selection, and clean application that leaves every room looking brand new.",
     longDescription:
-      "When taking budget, timeline and design into consideration, we make sure to always provide you with 5 star service no matter the size of the project. Many people struggle with taking on a full renovation at the expense of a budget and a timeline. Perhaps a home renovation broken into phases may suit you better.",
+      "Transform your space with precision and style. Our team provides high-quality interior painting services for homes and businesses, with expert surface prep, color selection, and clean application that leaves every room looking brand new.",
     sortOrder: 1,
   },
   {
-    slug: "complete-interior-remodel",
-    name: "Complete Interior Remodel",
-    tagline: "Full Home Remodel",
+    slug: "exterior-painting",
+    name: "Exterior Painting",
+    tagline: "Curb appeal starts here",
     shortDescription:
-      "Whether you've made the decision to update just a portion or the entire house, we've got you covered.",
+      "Durable, weather-resistant paints and materials for long-lasting, professional exterior painting that stands up to the elements.",
     longDescription:
-      "We have extensive expertise in every area from start to finish. With ever-changing styles and simple necessity of updates and repairs, ELEVATE is your one stop shop. It is always important to consider the balance of budget and intention pertaining to your remodel.",
+      "Curb appeal starts here. We use durable, weather-resistant paints and materials to provide long-lasting, professional exterior painting that stands up to the Midwest elements.",
     sortOrder: 2,
   },
   {
-    slug: "kitchen-redesign-remodel",
-    name: "Kitchen Redesign & Remodel",
-    tagline: "Custom Kitchen Buildout",
+    slug: "kitchen-remodeling",
+    name: "Kitchen Remodeling",
+    tagline: "The kitchen you've always wanted",
     shortDescription:
-      "Each kitchen is customized to fit our clients needs.",
+      "From custom cabinetry to sleek layouts and modern surfaces, we design kitchens that are beautiful, efficient, and built to your taste.",
     longDescription:
-      "Whether it's adding more space, opening the kitchen to the rest of the house or just getting a simple update, we have multiple in-house options to help you design the kitchen of your dreams. Our designers and project managers put together detailed drawings to help you see your vision before the project begins.",
+      "Let's build the kitchen you've always wanted. From custom cabinetry to sleek layouts and modern surfaces, we design kitchens that are beautiful, efficient, and built to your taste.",
     sortOrder: 3,
   },
   {
-    slug: "bathroom-redesign-remodel",
-    name: "Bathroom Redesign & Remodel",
-    tagline: "Fully Custom Bathroom Builds",
+    slug: "bathroom-renovation",
+    name: "Bathroom Renovation",
+    tagline: "Your own spa at home",
     shortDescription:
-      "Bathroom renovation is no longer a headache at ELEVATE.",
+      "Custom tilework, vanities, lighting, and plumbing—combining luxury with daily function.",
     longDescription:
-      "Everyone has heard a story or two about the hassles of bathroom remodel but that's simply not the case with us. Our team has an extensive background in bathroom remodel that will guarantee to put those worries behind you, with a service you won't forget.",
+      "Create your own spa at home. Our bathroom remodeling includes custom tilework, vanities, lighting, and plumbing — combining luxury with daily function.",
     sortOrder: 4,
   },
   {
-    slug: "restoration-and-repairs",
-    name: "Restoration and Repairs",
-    tagline: "We restore the old and make it new",
+    slug: "basement-remodeling",
+    name: "Basement Remodeling",
+    tagline: "Make the most of your square footage",
     shortDescription:
-      "Every home is guaranteed to need a little TLC over the years.",
+      "Whether you're envisioning a media room, home gym, or extra bedroom, we turn basements into livable, inviting spaces.",
     longDescription:
-      "Whether you're in need of a fresh coat of paint or you've found yourself on the bad end of extensive repairs, we have the right technicians to bring your home back to life with ease. A reliable contractor to help you prevent the next mishap from coming all too soon.",
+      "Make the most of your square footage. Whether you're envisioning a media room, home gym, or extra bedroom, we turn basements into livable, inviting spaces.",
     sortOrder: 5,
   },
   {
-    slug: "flooring-and-tile",
-    name: "Flooring & Tile",
-    tagline: "Expert Flooring & Tile Installation",
+    slug: "custom-deck-building",
+    name: "Custom Deck Building",
+    tagline: "Extend your living space outdoors",
     shortDescription:
-      "Hardwood, tile, luxury vinyl, and expert installation for every room.",
+      "Safe, stylish decks using top-grade materials and great craftsmanship—for entertaining or relaxing.",
     longDescription:
-      "From kitchen and bathroom tile to hardwood and luxury vinyl plank, we handle flooring and tile installation with precision. Our team ensures a flawless finish that stands up to South Florida's climate and your daily life.",
+      "Extend your living space outdoors with a custom-built deck. Great for entertaining or relaxing, we build safe, stylish decks using top-grade materials and great craftsmanship.",
     sortOrder: 6,
+  },
+  {
+    slug: "general-contracting",
+    name: "General Contracting",
+    tagline: "We handle it all",
+    shortDescription:
+      "From permits to project timelines—we manage every detail to keep your remodeling job smooth and on schedule.",
+    longDescription:
+      "We handle it all — from permits to project timelines. As your general contractor, we manage every detail to keep your remodeling job smooth and on schedule.",
+    sortOrder: 7,
+  },
+  {
+    slug: "interior-design-home-upgrades",
+    name: "Interior Design & Home Upgrades",
+    tagline: "Every project starts with a plan",
+    shortDescription:
+      "Our in-house interior designer helps you match colors, textures, furniture, and flow so the final result reflects your vision and lifestyle.",
+    longDescription:
+      "Every project starts with a plan. Our in-house interior designer helps you match colors, textures, furniture, and flow, so the final result reflects your vision and lifestyle.",
+    sortOrder: 8,
   },
 ];
 
@@ -140,12 +160,12 @@ const testimonials = [
 ];
 
 const siteSettings = [
-  { key: "phone", value: "(561) 247-3693" },
-  { key: "email", value: "hello@elevate.com" },
-  { key: "address", value: "6778 Lantana Rd, Suite 8, Greenacres, FL 33467" },
-  { key: "hero_headline", value: "Elevate Your Space. Realize Your Vision." },
-  { key: "hero_subline", value: "Custom renovations that fit how you live. Free estimate, no obligation." },
-  { key: "cta_text", value: "Get a Free Estimate" },
+  { key: "phone", value: "+1 312-483-6046" },
+  { key: "email", value: "Mike@getelevated.us" },
+  { key: "address", value: "Deerfield, IL" },
+  { key: "hero_headline", value: "Professional Residential & Commercial Remodeling" },
+  { key: "hero_subline", value: "Painting, kitchens, bathrooms, basements, decks, and more. Structured planning, reliable timelines, quality execution. Contact us for a consultation." },
+  { key: "cta_text", value: "Contact Us" },
   { key: "years_experience", value: "45" },
 ];
 
@@ -298,7 +318,24 @@ const sampleProjects = [
   },
 ];
 
+const legacyServiceSlugs = [
+  "commercial-interior",
+  "office-remodeling",
+  "commercial-exterior",
+  "new-builds-additions",
+  "industrial-warehouse",
+  "tenant-improvement",
+  "residential-remodeling",
+  "home-renovation",
+  "complete-interior-remodel",
+  "kitchen-redesign-remodel",
+  "bathroom-redesign-remodel",
+  "restoration-and-repairs",
+  "flooring-and-tile",
+];
+
 async function main() {
+  await prisma.service.deleteMany({ where: { slug: { in: legacyServiceSlugs } } });
   for (const s of services) {
     await prisma.service.upsert({
       where: { slug: s.slug },

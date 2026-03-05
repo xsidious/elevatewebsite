@@ -2,9 +2,9 @@ import Link from "next/link";
 import Image from "next/image";
 
 const aboutText =
-  "ELEVATE brings experience and dedication to every project. We focus on clear communication, quality work, and lasting relationships—so your remodel is on time, on budget, and exactly what you had in mind.";
+  "Elevate Painting & Remodeling provides high-quality remodeling and painting services for residential and commercial clients. Our team delivers dependable craftsmanship, clear communication, and a structured process from start to finish. We're creators of space and mood—your dream design isn't just possible, it's the plan.";
 
-const bullets = ["You come first", "Quality craftsmanship", "Honest pricing & timelines"];
+const bullets = ["Structured Planning", "Reliable Timelines", "Quality Execution", "Transparent Value"];
 
 export function AboutSnippet() {
   return (
@@ -13,8 +13,8 @@ export function AboutSnippet() {
         <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
           <div className="relative rounded-[2.5rem] overflow-hidden aspect-[4/3] lg:aspect-auto lg:min-h-[420px] order-2 lg:order-1">
             <Image
-              src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=800&q=80"
-              alt="Modern kitchen renovation"
+              src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80"
+              alt="Commercial interior build-out"
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -23,7 +23,7 @@ export function AboutSnippet() {
           <div className="order-1 lg:order-2">
             <p className="text-primary-500 font-semibold text-sm uppercase tracking-[0.2em]">About Us</p>
             <h2 className="mt-2 text-3xl font-bold text-gray-900 sm:text-4xl lg:text-5xl">
-              Remodel Experts Who Put You First
+              Built on Experience. Focused on Results.
             </h2>
             <p className="mt-6 text-lg text-gray-600 leading-relaxed">{aboutText}</p>
             <ul className="mt-8 space-y-4">
